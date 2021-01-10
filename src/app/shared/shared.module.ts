@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AppRoutingModule } from '../app-routing.module';
 
 //Modulos
 import { HeaderComponent } from './header/header.component';
@@ -17,10 +18,12 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
   exports:[
     BreadcrumbsComponent,
     SidebarComponent,
-    HeaderComponent
+    HeaderComponent,
+    
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ]
 })
 export class SharedModule { }
